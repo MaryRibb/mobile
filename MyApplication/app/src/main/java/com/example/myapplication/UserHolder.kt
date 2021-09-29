@@ -1,5 +1,5 @@
-//TODO: Change to name of your package
-package com.example.kotlinlessons
+
+package com.example.myapplication
 
 import androidx.annotation.VisibleForTesting
 
@@ -40,7 +40,7 @@ object UserHolder {
     fun registerUserByPhone(fullName: String, rawPhone: String): User {
         validatePhone(rawPhone)
         return User.makeUser(fullName, phone = rawPhone).also { user ->
-            if (map.containsKey(user.login)) throw IllegalArgumentException("A user with this email already exists")
+            if (map.containsKey(user.phone)) throw IllegalArgumentException("A user with this email already exists")
             else map[user.login] = user
         }
     }
