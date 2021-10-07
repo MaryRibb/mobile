@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.firsttlesson
 
 import org.junit.After
 import org.junit.Assert
