@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">lesson3</string>
+    <string name="go">Вперед</string>
+    <string name="back">Назад</string>
+    <string name="edittext">Введите  число</string>
+    <string name="operation">Введите знак</string>
+    <string name="res">Итог</string>
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+</resources>
