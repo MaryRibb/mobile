@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FifthLab</string>
+    <string name="like_button">Like Button</string>
+    <string name="human_photo">Human Photo</string>
+    <string name="humans">Личности</string>
+    <string name="back">Back</string>
+</resources>
