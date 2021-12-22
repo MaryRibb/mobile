@@ -1,11 +1,12 @@
 package com.example.fifthlab
 
+
 import android.os.AsyncTask
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+
 import java.util.concurrent.TimeUnit
 
-class AsyncFragment : Fragment() {
+class AsyncFragment : androidx.fragment.app.Fragment() {
     companion object{
         const val Tag = "Async"
     }
@@ -23,15 +24,22 @@ class AsyncFragment : Fragment() {
         HumanHolder.addListener(humansListener)
         MessagesSender().execute()
     }
-    class MessagesSender : AsyncTask<Void, Void, Void>() {
-        override fun doInBackground(vararg p0: Void?): Void? {
-            for (i in 1..HumanHolder.humans.count()) {
-                TimeUnit.SECONDS.sleep(2)
-                publishProgress()
+    class MessagesSender : AsyncTask<Unit, Unit, Unit>() {
+
+        override fun doInBackground(vararg p0: Unit?) {
+            try {
+                for (i in 1..HumanHolder.humans.count()) {
+                    TimeUnit.SECONDS.sleep(2)
+                    publishProgress()
+                }
+            }catch (e: InterruptedException){
+                e.printStackTrace()
+
             }
-            return null
         }
-        override fun onProgressUpdate(vararg p0: Void?) {
+
+
+        override fun onProgressUpdate(vararg p0: Unit?) {
             super.onProgressUpdate()
             HumanHolder.sendMessage()
         }

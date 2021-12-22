@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity(), ActivityCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         adapter = HumanAdapter(object : IHumanClickListener {
             override fun showHumanFio(name: String) {
                 Snackbar.make(binding.root, "Нажата карточка: ${name}", 500).show()
@@ -34,7 +35,10 @@ class MainActivity : AppCompatActivity(), ActivityCallback {
         val prevFragment = supportFragmentManager.findFragmentByTag(AsyncFragment.Tag)
         if (prevFragment == null) {
             fragment = AsyncFragment()
-            supportFragmentManager.beginTransaction().add(fragment!!, AsyncFragment.Tag).commit()
+            supportFragmentManager
+                .beginTransaction()
+                .add(fragment!!, AsyncFragment.Tag)
+                .commit()
         } else {
             fragment = prevFragment as AsyncFragment
             adapter.getPrevHumans(fragment!!.humans)
@@ -44,5 +48,9 @@ class MainActivity : AppCompatActivity(), ActivityCallback {
         val layoutManager = LinearLayoutManager(this)
         binding.recycleview.layoutManager = layoutManager
         binding.recycleview.adapter = adapter
+
+
     }
+
+
 }

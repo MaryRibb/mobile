@@ -47,7 +47,7 @@ class HumanAdapter(private val clickListener: IHumanClickListener) :
             itemView.setOnClickListener {
                 clickListener.showLikeHumanFio(human.fio)
             }
-            binding.run {
+            binding.apply {
                 like.setOnClickListener {
                     clickListener.showLikeHumanFio(human.fio)
                 }
