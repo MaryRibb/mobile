@@ -21,13 +21,31 @@ class Fragment3 : Fragment(){
         val view = binding.root
         nextButtonClick()
         backButtonClick()
+        setOnClickListeners()
         return view
+    }
+
+    fun setOnClickListeners(){
+        binding.minus.setOnClickListener{
+            setOperation(binding.minus.text.toString())
+        }
+        binding.plus.setOnClickListener{
+            setOperation(binding.plus.text.toString())
+        }
+        binding.multipy.setOnClickListener{
+            setOperation(binding.multipy.text.toString())
+        }
+        binding.divide.setOnClickListener{
+            setOperation(binding.divide.text.toString())
+        }
+    }
+    fun setOperation(operation: String){
+        Calculator.operation = operation
     }
 
     private fun nextButtonClick(){
         binding.next.setOnClickListener{
             val activityCollback = requireActivity() as ActivityCollback
-            Calculator.operation = binding.editText1.text.toString()
             activityCollback.showNextFragment(x)
         }
     }

@@ -4,12 +4,13 @@ class Calculator {
 
 
     companion object {
-        var num1: Int? = null
-        var num2: Int? = null
+
+        var num1: Double? = null
+        var num2: Double? = null
         var operation: String = ""
 
-        fun calculate(): Int? {
-            var res: Int? = null
+        fun calculate(): String? {
+            var res: Double? = null
             if (num1 != null && num2 != null) {
                 when (operation) {
                     "+" -> res = num1!! + num2!!
@@ -18,7 +19,7 @@ class Calculator {
                     "/" -> res = num1!! / num2!!
                 }
             }
-            return res
+            return res.toString()
         }
     }
 }

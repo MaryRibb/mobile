@@ -27,7 +27,7 @@ class Fragment2 : Fragment(){
     private fun nextButtonClick(){
         binding.next.setOnClickListener{
             val activityCollback = requireActivity() as ActivityCollback
-            Calculator.num2 = binding.editText1.text.toString().toInt()
+            Calculator.num2 = binding.editText1.text.toString().toDouble()
             activityCollback.showNextFragment(x)
         }
     }

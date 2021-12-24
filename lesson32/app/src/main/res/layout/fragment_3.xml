@@ -5,37 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp">
 
-        <EditText
-            android:id="@+id/edit_text1"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="+"
+            app:layout_constraintStart_toEndOf="@id/multipy"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:hint="@string/operation" />
+            />
+
+        <Button
+            android:id="@+id/multipy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="*"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="/"
+            app:layout_constraintStart_toEndOf="@id/plus"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_purple"
+            android:text="-"
+            app:layout_constraintStart_toEndOf="@id/divide"
+            app:layout_constraintTop_toTopOf="parent"/>
+
 
         <Button
             android:id="@+id/back"
-            android:backgroundTint="@android:color/holo_red_dark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/edit_text1"
+            android:backgroundTint="@android:color/holo_red_dark"
             android:text="@string/back"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toBottomOf="@id/minus"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp" />
+
         <Button
             android:id="@+id/next"
-            android:backgroundTint="@android:color/holo_green_dark"
-            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/edit_text1"
-            app:layout_constraintStart_toEndOf="@+id/back"
+            android:layout_marginStart="196dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@android:color/holo_green_dark"
             android:text="@string/go"
+            app:layout_constraintStart_toEndOf="@+id/back"
+            app:layout_constraintTop_toBottomOf="@id/plus"
             tools:ignore="MissingConstraints" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+
