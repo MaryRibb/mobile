@@ -18,11 +18,11 @@ class Fragment3 : Fragment(){
                               savedInstanceState: Bundle?
     ): View? {
         binding = Fragment3Binding.inflate(layoutInflater)
-        val view = binding.root
+
         nextButtonClick()
         backButtonClick()
         setOnClickListeners()
-        return view
+        return binding.root
     }
 
     fun setOnClickListeners(){

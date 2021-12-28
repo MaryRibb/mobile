@@ -19,10 +19,8 @@ class Fragment4 : Fragment(){
     ): View? {
         binding = Fragment4Binding.inflate(layoutInflater)
         binding.resulttwo.text = Calculator.calculate().toString()
-        val view = binding.root
-
         backButtonClick()
-        return view
+        return binding.root
     }
 
     private fun backButtonClick(){

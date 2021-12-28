@@ -18,10 +18,10 @@ class Fragment2 : Fragment(){
                               savedInstanceState: Bundle?
     ): View? {
         binding = Fragment2Binding.inflate(layoutInflater)
-        val view = binding.root
+
         nextButtonClick()
         backButtonClick()
-        return view
+        return binding.root
     }
 
     private fun nextButtonClick(){

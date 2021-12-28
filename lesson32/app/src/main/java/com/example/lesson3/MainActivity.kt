@@ -28,18 +28,34 @@ class MainActivity : AppCompatActivity(), ActivityCollback{
         buttonList.add(2, binding.button3)
         buttonList.add(3, binding.button4)
 
-        ClickListener()
+        setClickListenerForButtons()
     }
 
-    private fun ClickListener(){
-        supportFragmentManager.beginTransaction().replace(R.id.fragments, fragmentList[0]).commit()
-
-        for (i in fragmentList.indices){
-            buttonList[i].setOnClickListener {
-                supportFragmentManager.beginTransaction().replace(R.id.fragments, fragmentList[i]).commit()
-            }
-            if ( i > 0 ) buttonList[i].setEnabled(false)
+    private fun setClickListenerForButtons(){
+        buttonList[0].setOnClickListener{
+            supportFragmentManager
+                .beginTransaction().replace(R.id.fragments, fragmentList[0]).commit()
+            buttonsManager(0)
         }
+        buttonList[1].setOnClickListener{
+            supportFragmentManager
+                .beginTransaction().replace(R.id.fragments, fragmentList[1]).commit()
+            buttonsManager(1)
+        }
+        buttonList[2].setOnClickListener{
+            supportFragmentManager
+                .beginTransaction().replace(R.id.fragments, fragmentList[2]).commit()
+            buttonsManager(2)
+        }
+        buttonList[3].setOnClickListener{
+            supportFragmentManager
+                .beginTransaction().replace(R.id.fragments, fragmentList[3]).commit()
+            buttonsManager(3)
+        }
+
+        supportFragmentManager
+            .beginTransaction().replace(R.id.fragments, fragmentList[0]).commit()
+        buttonsManager(0)
     }
 
     fun but(x: Int){
@@ -63,6 +79,10 @@ class MainActivity : AppCompatActivity(), ActivityCollback{
     override fun showBackFragment(x: Int) {
         supportFragmentManager.beginTransaction().replace(R.id.fragments, fragmentList[x - 2]).commit()
         butdestroy(x-1)
+    }
+    private fun buttonsManager(n: Int) {
+        for (i in 0 until buttonList.count())
+            buttonList[i].isEnabled = i <= n
     }
 
     override fun Exit() {

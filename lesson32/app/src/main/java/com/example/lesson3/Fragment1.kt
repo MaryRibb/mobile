@@ -10,15 +10,15 @@ import com.example.lesson3.databinding.Fragment1Binding
 
 
 class Fragment1 : Fragment() {
-    private lateinit var binding: Fragment1Binding
+    lateinit var binding: Fragment1Binding
     private var x :Int = 1
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = Fragment1Binding.inflate(layoutInflater)
-        val view = binding.root
+
         nextButtonClick()
         backButtonClick()
-        return view
+        return binding.root
     }
 
     private fun nextButtonClick(){
