@@ -7,6 +7,7 @@ import com.example.secondone.data.CurrencyApi
 import com.example.secondone.ui.main.MainFragment
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
         }
-        val interceptor = HttpLoggingInterceptor()
+        /*val interceptor = HttpLoggingInterceptor()
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
         val client = OkHttpClient.Builder().addInterceptor(interceptor).build()
 
@@ -40,8 +41,11 @@ class MainActivity : AppCompatActivity() {
             Log.d("MY_TAG","$currencies")
 
 
+        }*/
+
+
+
         }
 
 
     }
-}
