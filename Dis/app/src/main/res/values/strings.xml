@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ist">История</string>
+    <string name="glav">Главная</string>
+    <string name="graf">График</string>
+    <string name="histone">Результат</string>
+    <string name="histtwo">Дата</string>
+</resources>

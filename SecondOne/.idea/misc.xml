@@ -3,7 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/currencyitem.xml" value="0.1796875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/currencyitemitog.xml" value="0.1796875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/currencyitems.xml" value="0.22" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/currencyitems_main.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/fragment_currency_items_main.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/fragmentfive.xml" value="0.1796875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/fragmentfive_graf.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/fragmentfore.xml" value="0.1796875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/fragmentfore_filtr.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/fragmentone.xml" value="0.1796875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/fragmentthree.xml" value="0.1796875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/fragmentthree_history.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/fragmenttwo.xml" value="0.1796875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/fragmenttwo_exchange.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/item.xml" value="0.16983695652173914" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/main_activity.xml" value="0.1796875" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/main_fragment.xml" value="0.1796875" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/layout/main_fragment_currency.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/Asus/AndroidStudioProjects/SecondOne/app/src/main/res/menu/mymenu.xml" value="0.1796875" />
       </map>
     </option>
   </component>
